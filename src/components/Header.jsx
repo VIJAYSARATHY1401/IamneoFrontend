@@ -60,8 +60,10 @@ function myfunc() {
 	newdiv.append(newcard);
 	console.log(document.querySelectorAll(".now i"));
 	const icon = document.querySelectorAll(".now i");
-	for (let i in icon.length) {
-		icon[i].addEventListener("click", (event) => {
+
+	for (let i of icon) {
+		i.addEventListener("click", (event) => {
+			console.log("d");
 			removes(event);
 		});
 	}
