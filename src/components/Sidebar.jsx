@@ -6,7 +6,6 @@ import { BiBriefcase } from "react-icons/bi";
 import { FaClipboardList, FaRegUserCircle } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
 
-// import styles from "./styles/mystyle.module.css";
 const Sidebar = () => {
 	return (
 		<div>

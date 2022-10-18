@@ -10,7 +10,7 @@ import {
 import { FaRegistered } from "react-icons/fa";
 import { AiOutlineGift } from "react-icons/ai";
 import styles from "../styles/mystyle.module.css";
-var inpufield;
+let inpufield;
 function getEl(event) {
 	inpufield = event.target.value;
 	console.log(inpufield);
@@ -23,7 +23,6 @@ function myfunc() {
 	newcard.style.width = "530px";
 	newcard.style.marginTop = "10px";
 	newcard.style.display = "inline-block";
-	// newcard.style.marginRight = "10px";
 	newcard.style.marginLeft = "18px";
 	const cardbody = document.createElement("div");
 	cardbody.className = "card-body d-flex justify-content-between";
@@ -36,8 +35,8 @@ function myfunc() {
 	cardfoot.className = "card-footer";
 	const flex = document.createElement("div");
 	flex.className = "d-flex justify-content-between";
-	var creatEl;
-	var div1 = document.createElement("div");
+	let creatEl;
+	let div1 = document.createElement("div");
 	for (let i = 0; i < 5; i++) {
 		creatEl = document.createElement("i");
 		creatEl.className = "fa fa-star";
@@ -46,7 +45,7 @@ function myfunc() {
 	}
 
 	const div2 = document.createElement("div");
-	var creatEl2 = document.createElement("i");
+	let creatEl2 = document.createElement("i");
 	creatEl2.className = "fa fa-envelope";
 	div2.append(creatEl2);
 	flex.append(div1);
@@ -57,7 +56,7 @@ function myfunc() {
   `;
 	newcard.append(cardbody);
 	newcard.append(cardfoot);
-	var newdiv = document.getElementById("newdiv");
+	let newdiv = document.getElementById("newdiv");
 	newdiv.append(newcard);
 	console.log(document.querySelectorAll(".now i"));
 	const icon = document.querySelectorAll(".now i");
