@@ -4,9 +4,8 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/mystyle.module.css";
-// import { faSolarPanel } from "@fortawesome/free-solid-svg-icons";
+
 
 import data from "../javascript/data";
 const Grid = () => {
